@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      color: #00f;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+
+    .nav-links li {
+      margin: 0 15px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .login-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .login-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .main-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .text-section {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .text-section h1 {
+      color: #00f;
+      font-size: 36px;
+    }
+
+    .text-section p {
+      margin: 15px 0;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .text-section .issuers img {
+      margin-right: 10px;
+      max-height: 30px;
+    }
+
+    .video-section {
+      flex: 1;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .video-section video {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      .main-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .text-section {
+        text-align: center;
+      }
+
+      .text-section h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">LOGO</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <button class="login-btn">Login</button>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main-container">
+    <!-- Text Section -->
+    <div class="text-section">
+      <h1>Say Hi To<br> <span style="color: #00f;">One Card</span></h1>
+      <p>Co-branded Card Issuers:</p>
+      <div class="issuers">
+        <img src="photo/images (3).jpg" alt="SBM">
+        <img src="https://via.placeholder.com/100x30?text=South+Indian+Bank" alt="South Indian Bank">
+        <img src="https://via.placeholder.com/100x30?text=CSB" alt="CSB">
+        <img src="https://via.placeholder.com/100x30?text=Federal+Bank" alt="Federal Bank">
+        <img src="https://via.placeholder.com/100x30?text=BOB" alt="BOB">
+      </div>
+      <p>
+        India's best metal credit card. Built with full-stack tech. Backed by the principles of simplicity, transparency, and giving back control to the user.
+      </p>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-section">
+      <video autoplay muted loop>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</body>
+</html>
